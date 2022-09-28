@@ -1,0 +1,11 @@
+.menu-container {
+    width: fit-content;
+    margin: auto;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}

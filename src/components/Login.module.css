@@ -1,0 +1,63 @@
+.card {
+    margin: auto;
+    width: 400px;
+    height: 375px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card h4 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.card .error {
+    color: red;
+    padding: 1rem;
+}
+.input-container {
+    width: 70%;
+    height: 2.5rem;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container label {
+    padding-right: 1rem;
+}
+
+.btn {
+    width: 5rem;
+    height: 2.1rem;
+    margin: auto;
+    margin-bottom: 1rem;
+
+    background-color: #313f9e;
+
+    padding: 0.2rem;
+}
+.btn:disabled {
+    background-color: #979797;
+    cursor: not-allowed;
+}
+
+.create-account-btn {
+    width: fit-content;
+    height: 2.1rem;
+    margin-left: auto;
+    margin-bottom: 1rem;
+    box-shadow: none;
+    color: #313f9e;
+    background-color: white;
+    padding: 0.2rem;
+}
+
+.create-account-btn:hover {
+    text-decoration: underline;
+}
