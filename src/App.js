@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Cart from "./components/Menu/Cart";
 import FoodItems from "./components/Menu/FoodItems";
 import CartContext from "./store/cart-ctx";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Checkout from "./components/Checkout";
 import Login from "./components/Login";
@@ -23,7 +23,7 @@ function App() {
     useEffect(() => {}, [cartContext]);
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className="App">
                 <Header onCartClick={showCartHandler} />
                 {showCart && <Cart onClose={hideCartHandler} />}
@@ -35,7 +35,7 @@ function App() {
                     <Route path="/signup" element={<SignUp />} />
                 </Routes>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
