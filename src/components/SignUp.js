@@ -13,7 +13,7 @@ const SignUp = () => {
 
     let isInputEmpty =
         emailInput.length === 0 ||
-        passwordInput.length === 0 ||
+        passwordInput.length < 6 ||
         confirmPassword.length === 0;
 
     let isValidInput = !isInputEmpty && passwordInput === confirmPassword;
