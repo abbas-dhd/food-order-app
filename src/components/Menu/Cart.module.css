@@ -33,7 +33,7 @@
     padding-bottom: 1rem;
     width: 100%;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: center;
 }
 
 .cart-item p {
@@ -79,4 +79,30 @@ button {
     background-color: white;
     color: #f40157;
     box-shadow: none;
+}
+
+.total-amt {
+    margin-top: 1.25rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .button-container button {
+        margin-top: 3rem;
+        height: fit-content;
+        font-size: 1rem;
+    }
+    .backdrop {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .modal {
+        width: 90vw;
+    }
+    .cart-item {
+        justify-content: center;
+    }
 }

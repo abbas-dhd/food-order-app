@@ -56,3 +56,24 @@
 .button-container .remove {
     background-color: #f40157;
 }
+
+@media screen and (max-width: 1000px) {
+    .card {
+        flex: 2 1 auto;
+        width: 250px;
+        height: 355px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        flex: 1 1 auto;
+    }
+    .button-container button {
+        height: 1.75rem;
+        font-size: 1.25rem;
+        width: 3.25rem;
+        padding: 0.2rem;
+        margin: 1rem;
+    }
+}

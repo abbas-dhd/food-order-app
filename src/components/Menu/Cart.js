@@ -47,7 +47,9 @@ const Cart = ({ onClose }) => {
                     return <CartItem key={item.name} item={item} />;
                 })}
 
-                <p>Total Amount: {cartContext.totalAmount} </p>
+                <p className={classes["total-amt"]}>
+                    Total Amount: {cartContext.totalAmount}
+                </p>
 
                 <div className={classes["button-container"]}>
                     <button

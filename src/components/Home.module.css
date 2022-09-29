@@ -16,3 +16,14 @@
     font-size: large;
     background-color: #313f9e;
 }
+
+@media screen and (max-width: 450px) {
+    .title {
+        font-size: 3rem;
+    }
+    .btn {
+        font-size: 1.75rem;
+        width: max-content;
+        height: 2.5rem;
+    }
+}
